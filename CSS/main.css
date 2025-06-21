@@ -1,0 +1,114 @@
+/* main.css */
+
+html {
+    font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #3e3e3e;
+  line-height: 1.6;
+}
+
+header.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg") center/cover no-repeat;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+header.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header.hero p {
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.coffee-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.coffee-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.coffee-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.advantages {
+ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/about_coffe.jpg") center/cover no-repeat;
+ border-radius: 0.8rem;
+ color: #d7c3c3;
+}
+
+.advantages ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.contacts p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #3e3e3e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header.hero {
+    padding: 60px 20px;
+  }
+
+  header.hero h1 {
+    font-size: 2rem;
+  }
+
+  .coffee-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coffee-item {
+    width: 90%;
+  }
+}
